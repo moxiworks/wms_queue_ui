@@ -1,0 +1,42 @@
+.bundle
+db/*.sqlite3
+log/*.log
+tmp/
+.idea/*
+.DS_STORE
+*./log
+*.log
+*~
+Gemfile~
+wms_svc_message.ids
+#*#
+.rvmrc
+.ruby-version
+.ruby-gemset
+.autotest
+
+*.swp
+*.swo
+
+# RubyMine.gitignore
+.idea/workspace.xml
+
+#OSX.gitignore
+# Thumbnails
+._*
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+#IntelliJ.gitignore
+*.iml
+*.ipr
+*.iws
+.idea/
+atlassian-ide-plugin.xml
+
+*.secret
+
+# Vendor rbenv
+vendor/ruby
+public/images/preview_images
