@@ -22,5 +22,9 @@ module WmsQueueUi
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
+
+    filename = Rails.env.development? ? "redis.yml.secret" : "redis.yml"
+    config.redis = YAML::load(File.open(File.join(Rails.root,"config", filename)))
+
   end
 end

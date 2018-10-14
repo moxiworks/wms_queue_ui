@@ -1,13 +1,10 @@
-require 'sidekiq'
+Rails.application.config.redis_pools = {}
 
-filename = Rails.env.development? ? "redis.yml.secret" : "redis.yml"
-redis_conf = YAML::load(File.open(File.join(Rails.root,"config", filename)))[Rails.env]
+Rails.application.config.redis.each do |conf_key, app_conf|
+  Rails.application.config.redis_pools[conf_key] =
+      {
+          redis: ConnectionPool.new { Redis.new( url: "redis://#{app_conf['host']}:#{app_conf['port']}" ) },
+          apps: app_conf['applications']
+      }
 
-
-Sidekiq.configure_server do |config|
-  config.redis = { url: "redis://#{redis_conf['host']}:#{redis_conf['port']}" }
-end
-
-Sidekiq.configure_client do |config|
-  config.redis = { url: "redis://#{redis_conf['host']}:#{redis_conf['port']}" }
 end
