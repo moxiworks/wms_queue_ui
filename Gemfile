@@ -6,6 +6,7 @@ gem 'rails',
 
 gem 'sqlite3'
 
+gem 'unicorn'
 
 gem 'sidekiq1',
     git: 'git@github.com:Windermere/sidekiq.git',
@@ -17,3 +18,4 @@ gem 'sidekiq2',
     branch: 'sidekiq2',
     ref: '1166a78d57362f08680999bf5b42f98c23088b8d'
 
+gem 'sidekiq'
