@@ -16,7 +16,7 @@ gem 'sidekiq1',
 gem 'sidekiq1-failures',
     git: 'git@github.com:Windermere/sidekiq-failures.git',
     branch: 'sidekiq1',
-    ref: '39c9f3f8c83743361b4585df87fdb8331ed5dbdb'
+    ref: '10c2d7dfc167d7d7c57126963a49242fef3248de'
 
 gem 'sidekiq2',
     git: 'git@github.com:Windermere/sidekiq.git',
@@ -26,7 +26,7 @@ gem 'sidekiq2',
 gem 'sidekiq2-failures',
     git: 'git@github.com:Windermere/sidekiq-failures.git',
     branch: 'sidekiq2',
-    ref: '39f5f8344b867697b8f987c86b976b6954f6ee4b'
+    ref: '998bb1e08d9b04e32c1a8f8c2a12044e82a178fc'
 
 gem 'sidekiq'
 
