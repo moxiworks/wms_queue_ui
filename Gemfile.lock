@@ -1,4 +1,22 @@
 GIT
+  remote: git@github.com:Windermere/sidekiq-failures.git
+  revision: 39c9f3f8c83743361b4585df87fdb8331ed5dbdb
+  ref: 39c9f3f8c83743361b4585df87fdb8331ed5dbdb
+  branch: sidekiq1
+  specs:
+    sidekiq1-failures (1.0.0)
+      sidekiq1 (>= 4.0.0)
+
+GIT
+  remote: git@github.com:Windermere/sidekiq-failures.git
+  revision: 39f5f8344b867697b8f987c86b976b6954f6ee4b
+  ref: 39f5f8344b867697b8f987c86b976b6954f6ee4b
+  branch: sidekiq2
+  specs:
+    sidekiq2-failures (1.0.0)
+      sidekiq2 (>= 4.0.0)
+
+GIT
   remote: git@github.com:Windermere/sidekiq.git
   revision: 1166a78d57362f08680999bf5b42f98c23088b8d
   ref: 1166a78d57362f08680999bf5b42f98c23088b8d
@@ -140,7 +158,9 @@ DEPENDENCIES
   sidekiq
   sidekiq-failures
   sidekiq1!
+  sidekiq1-failures!
   sidekiq2!
+  sidekiq2-failures!
   sqlite3
   unicorn
 
