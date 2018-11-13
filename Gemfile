@@ -19,3 +19,5 @@ gem 'sidekiq2',
     ref: '1166a78d57362f08680999bf5b42f98c23088b8d'
 
 gem 'sidekiq'
+
+gem 'sidekiq-failures'
